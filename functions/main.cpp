@@ -10,12 +10,17 @@ double power(double base, int exponent)
     return result;
 }
 
-int main()
+void print_pow(double base, int exponent)
 {
-    int base, exponent;
-    std::cin >> base;
-    std::cin >> exponent;
-
     double result = power(base, exponent);
     std::cout << result << std::endl;
+}
+
+int main()
+{
+    double base;
+    int exponent;
+    std::cin >> base;
+    std::cin >> exponent;
+    print_pow(base, exponent);
 }
